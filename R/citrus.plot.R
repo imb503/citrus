@@ -403,7 +403,7 @@ citrus.createHierarchyGraph = function(citrus.clustering,selectedClusters){
 #' 
 #' # Plot Clustering Hierarchy - Uncomment and Specify an output file
 #' # citrus.plotClusteringHierarchy(outputFile="/path/to/output.pdf",clusterColors=clusterMedians,graph=hierarchyGraph$graph,layout=hierarchyGraph$layout,plotSize=hierarchyGraph$plotSize)
-citrus.plotClusteringHierarchy = function(outputFile,clusterColors,graph,layout,theme="black",plotSize=15,singlePDF=F,ncol=3,scale=1,plotClusterIDs=T){
+citrus.plotClusteringHierarchy = function(outputFile,clusterColors,graph,layout,theme="white",plotSize=15,singlePDF=F,ncol=3,scale=1,plotClusterIDs=T){
   if (theme=="black"){
     bg="black"
     stroke="white"
@@ -502,7 +502,7 @@ citrus.plotClusteringHierarchy = function(outputFile,clusterColors,graph,layout,
 #' 
 #' # Plot features in clustering hierarchy 
 #' # citrus.plotHierarchicalClusterFeatureGroups(outputFile="/path/to/outputFile.pdf",featureClusterMatrix,graph=hierarchyGraph$graph,layout=hierarchyGraph$layout,plotSize=hierarchyGraph$plotSize)
-citrus.plotHierarchicalClusterFeatureGroups = function(outputFile,featureClusterMatrix,graph,layout,theme="black",plotSize=15,plotClusterIDs=T,featureClusterColors=NULL,encircle=T){
+citrus.plotHierarchicalClusterFeatureGroups = function(outputFile,featureClusterMatrix,graph,layout,theme="white",plotSize=15,plotClusterIDs=T,featureClusterColors=NULL,encircle=T){
   
   if (!is.null(featureClusterColors)&&(is.null(names(featureClusterColors)))){
     stop("featureClusterColors argument must be vector with elements having names of vertices to be colored.")
