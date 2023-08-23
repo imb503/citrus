@@ -405,8 +405,8 @@ citrus.createHierarchyGraph = function(citrus.clustering,selectedClusters){
 #' # citrus.plotClusteringHierarchy(outputFile="/path/to/output.pdf",clusterColors=clusterMedians,graph=hierarchyGraph$graph,layout=hierarchyGraph$layout,plotSize=hierarchyGraph$plotSize)
 citrus.plotClusteringHierarchy = function(outputFile,clusterColors,graph,layout,theme="white",plotSize=15,singlePDF=F,ncol=3,scale=1,plotClusterIDs=T){
   if (theme=="black"){
-    bg="black"
-    stroke="white"
+    bg="white"
+    stroke="black"
     strokea=rgb(1,1,1,.5)
   } else if (theme=="white"){
     bg="white"
@@ -509,9 +509,9 @@ citrus.plotHierarchicalClusterFeatureGroups = function(outputFile,featureCluster
   }
   
   if (theme=="black"){
-    bg="black"
-    stroke="white"
-    strokea=rgb(1,1,1,.5)
+    bg="white"
+    stroke="black"
+    strokea=rgb(0,0,0,.5)
   } else if (theme=="white"){
     bg="white"
     stroke="black"
